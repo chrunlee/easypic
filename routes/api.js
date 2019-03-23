@@ -12,13 +12,10 @@ router.all('/*', async (req,res,next)=>{
 		securt = info.superpwd;
 	}
 	//校验md5
-	console.log(securt);
 	if(req.headers['securt']){
 		let putstr = req.headers['securt'];
-		console.log(putstr);
 		let md5 = crypto.createHash('md5');
 		let newsecurt =  md5.update(putstr).digest('hex');
-		console.log(newsecurt);
 		if(securt == newsecurt){
 			next();
 		}else{
@@ -80,10 +77,6 @@ router.post('/simi',(req,res,next)=>{
 		res.json({success : true});
 	})
 })
-
-
-
-
 
 
 module.exports = router;
