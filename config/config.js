@@ -16,9 +16,9 @@ module.exports = {
 	//显示设置
 	site : {
 		port : 6001,
-		//域名
+		//域名,后面不带/
 		host : 'http://res.chrunlee.cn',
-		hostPrefix : '/',
+		hostPrefix : '',
 		//路由
 		route : '/static'
 		//文件完整路径:http://www.byyui.com/static/2019/03/timestamp_random.extname
