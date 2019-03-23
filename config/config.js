@@ -10,7 +10,7 @@ module.exports = {
 	//上传设置
 	upload : {
 		//上传的前缀路径
-		prefix : '/data/easypic'
+		prefix : 'data/easypic'
 
 	},
 	//显示设置
