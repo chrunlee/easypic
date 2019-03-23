@@ -15,7 +15,7 @@ module.exports = {
 	},
 	//显示设置
 	site : {
-		port : 3333,
+		port : 6001,
 		//域名
 		host : 'http://res.chrunlee.cn',
 		hostPrefix : '/',
